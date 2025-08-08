@@ -1,6 +1,56 @@
-/* CSS Variables for Theme Management */
+/* Design Tokens and Global Variables (merged from Figma 'common.css') */
 :root {
-  /* Light theme colors */
+  /* Color palette */
+  --color-ffffff: #ffffff;
+  --color-d6d7ef: #d6d7ef;
+  --color-9395d3: #9395d3;
+  --color-8b8787: #8b8787;
+  --color-000000: #000000;
+  --color-d1d1d6: #d1d1d6;
+  --color-ebebf5: #ebebf5;
+  --color-34c759: #34c759;
+  --color-ffd60a: #ffd60a;
+  --color-b3b7ee: #b3b7ee;
+
+  /* App backgrounds */
+  --app-background: var(--color-ffffff);
+  --appbar-background: var(--color-9395d3);
+
+  /* Typography - Jost */
+  --font-family-primary: 'Jost', Arial, sans-serif;
+
+  --font-typo0: 400 10px/14.45px var(--font-family-primary);
+  --font-typo1: 600 24px/34.68px var(--font-family-primary);
+  --font-typo2: 600 13px/18.78px var(--font-family-primary);
+  --font-typo3: 400 16px/23.12px var(--font-family-primary);
+  --font-typo4: 600 20px/28.90px var(--font-family-primary);
+  --font-typo5: 400 15px/21.67px var(--font-family-primary);
+
+  --font-typo6: 400 10px/14.45px var(--font-family-primary); /* color: #9395d3 */
+  --font-typo7: 400 10px/14.45px var(--font-family-primary); /* color: #8b8787 */
+  --font-typo8: 600 24px/34.68px var(--font-family-primary); /* color: #fff */
+  --font-typo9: 600 13px/18.78px var(--font-family-primary); /* color: #9395d3 */
+  --font-typo10: 400 10px/14.45px var(--font-family-primary); /* color: #000 */
+  --font-typo11: 400 16px/23.12px var(--font-family-primary); /* color: #8b8787 */
+  --font-typo12: 600 20px/28.90px var(--font-family-primary); /* color: #fff */
+  --font-typo13: 400 15px/21.67px var(--font-family-primary); /* color: #fff */
+
+  /* Spacing */
+  --space-xs: 8px;     /* sample */
+  --space-sm: 15px;    /* border-radius small */
+  --space-md: 20px;    /* border-radius medium */
+  --space-lg: 28px;
+  --space-xl: 44px;
+
+  /* Border radii */
+  --radius-xs: 1px;
+  --radius-sm: 15px;
+  --radius-md: 20px;
+
+  /* Shadow */
+  --shadow-md: 0px 4px 4px 0px #00000030;
+
+  /* Demo/theme variables—used for default demo styles, but Figma tokens above are for design-accurate AddTodo */
   --bg-primary: #ffffff;
   --bg-secondary: #f8f9fa;
   --text-primary: #282c34;
@@ -91,6 +141,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Utility classes (imported from Figma common.css) */
+.u-shadow-md {
+  box-shadow: var(--shadow-md);
+}
+
+/* Hide visually, show for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: -1px;
+  border: 0; padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
 }
 
 /* Responsive design for mobile */
